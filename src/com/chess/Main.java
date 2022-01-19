@@ -1,11 +1,11 @@
 package com.chess;
 
-import com.chess.boardgame.Position;
+import com.chess.boardgame.Board;
 
 public class Main {
 
     public static void main(String[] args) {
-        Position position = new Position(3, 4);
-        System.out.println(position);
+
+        Board board = new Board(8, 8);
     }
 }
