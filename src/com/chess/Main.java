@@ -1,8 +1,11 @@
 package com.chess;
 
+import com.chess.boardgame.Position;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        Position position = new Position(3, 4);
+        System.out.println(position);
     }
 }
