@@ -1,5 +1,6 @@
 package com.chess;
 
+import com.chess.chess.ChessMatch;
 import com.chess.chess.ChessPiece;
 import com.chess.chess.ChessPosition;
 import com.chess.chess.Color;
@@ -43,6 +44,13 @@ public class UI {
         } catch(RuntimeException e) {
             throw new InputMismatchException("Error reading chess position. Valid values are from a1 to h8");
         }
+    }
+
+    public static void printMatch(ChessMatch chessMatch) {
+        printBoard(chessMatch.gePieces());
+        System.out.println();
+        System.out.println("Turn: " + chessMatch.getTurn());
+        System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
     }
 
 
